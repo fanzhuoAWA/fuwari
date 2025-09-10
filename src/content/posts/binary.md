@@ -1,66 +1,60 @@
 ---
-title: 二分模板
+title: Binary Search Template
 published: 2025-05-24
 description: zzz
-tags: [C++, 二分, 模板]
+tags: [C++, Binary Search, Template]
 image: "https://image.fanzhuo.xyz/file/AgACAgUAAyEGAASKws10AAMSaDGu__uKwFRpuBqE1JK6c0PXTiMAAuXJMRvLa4hVGXYdQrPWg50BAAMCAANtAAM2BA.png"
 category: Algorithm
 draft: false
 ---
 
-上课时记下的一些笔记
-
+Some notes taken during class.
 
 ```cpp
-//整数二分
-int L = 0, R= 1e9;
+// Integer binary search
+int L = 0, R = 1e9;
 int ans = -1;
-while(L <= R)
-{
+while (L <= R) {
     int mid = (L + R) >> 1;
-    if(check(mid))
-    {
+    if (check(mid)) {
         ans = mid;
         R = mid - 1;
-    }
-    else
-    {
+    } else {
         L = mid + 1;
     }
 }
-//实数二分 或者 浮点数二分
+
+// Real number binary search or floating-point binary search
 long double l = 0, r = 1e9;
 int T = 100;
-while(T--)
-{
+while (T--) {
     long double mid = (l + r) * 0.5;
-    if(check(mid))
-    {
+    if (check(mid)) {
         l = mid;
-    }
-    else
-    {
+    } else {
         r = mid;
     }
 }
-cout << l << "\n";//输出r也可
-//二分函数
-//lower_bound(*begin, *end, val, cmp) //cmp是自主设定的比较函数（可有可无，不建议使用）
-//upper_bound()
+cout << l << "\n"; // Outputting 'r' is also acceptable
 
-//lower表示 在我给定的排序规则下，找到第一个大于等于val的位置指针
-//upper表示                                大于
+// Binary search functions
+// lower_bound(*begin, *end, val, cmp) // cmp is a custom comparison function (optional, not recommended to use)
+// upper_bound()
 
-//例：
+// lower_bound: Under the given sorting rule, finds the first pointer to a value greater than or equal to 'val'
+// upper_bound: Under the given sorting rule, finds the first pointer to a value greater than 'val'
+
+// Example:
 int a[50];
 a[1] = 2;
 a[2] = 4;
 a[3] = 5;
 a[4] = 6;
 auto it = lower_bound(a + 1, a + 49, 5);
-cout << *it << "\n";//输出的是5（a[3]），实际得到的是第一个大于等我要求的值（val项的5）的位置
-//访问第一个大于等于val的值
-//第二种用法
-int pos = lower_bound(a + 1, a + 49, 5) - a;//得到了我们想要的位置
-//a[pos] == *it
-## ## ```
+cout << *it << "\n"; // Outputs 5 (a[3]), actually obtains the position of the first value greater than or equal to the required value (val = 5)
+
+// Access the first value greater than or equal to 'val'
+// Second usage method:
+int pos = lower_bound(a + 1, a + 49, 5) - a; // Obtains the desired position
+// a[pos] == *it
+```

@@ -3,7 +3,6 @@ title: Binary Search Template
 published: 2025-05-24
 description: zzz
 tags: [C++, Binary Search, Template]
-image: "https://image.fanzhuo.xyz/file/AgACAgUAAyEGAASKws10AAMSaDGu__uKwFRpuBqE1JK6c0PXTiMAAuXJMRvLa4hVGXYdQrPWg50BAAMCAANtAAM2BA.png"
 category: Algorithm
 draft: false
 ---

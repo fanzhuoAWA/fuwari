@@ -1,2 +1,2 @@
-# 关于
-本站是 [Fanzhuo's Blog](https://blog.fanzhuo.xyz/) 的精选版，我挑选了一些我认为我写得好的文章放到了这里，如果您想访问更多文章，请点击顶栏的 `Blog` (〃＾▽＾〃)
+# About  
+This site is a curated version of [Fanzhuo's Blog](https://blog.fanzhuo.xyz/). I've selected some articles that I believe are well-written and placed them here. If you'd like to access more posts, please click the `Blog` button in the top navigation bar (〃＾▽＾〃).

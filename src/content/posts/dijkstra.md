@@ -3,7 +3,7 @@ title: Explanation of Dijkstra's Shortest Path Algorithm
 published: 2025-05-31
 description: zzz
 tags: [Dijkstra, Shortest Path, Graph Theory]
-image: "https://image.fanzhuo.xyz/file/AgACAgUAAyEGAASKws10AAMUaDrp4vK69On9IzL2uPaXoFU-B9sAAkTKMRupmthV8ILEvcQlrd4BAAMCAAN4AAM2BA.png"
+image: "https://origin.picgo.net/2025/09/13/graph-1edfb13fe0696d4ad.png"
 category: Algorithm
 draft: false
 ---
@@ -13,7 +13,7 @@ Dijkstra's algorithm was proposed by Dutch computer scientist Edsger W. Dijkstra
 
 It's quite simple to understand. Let's take an example: we'll use the multi-node, multi-path graph below to explain the process of Dijkstra's algorithm finding the shortest path. (This graph might be a bit unclear; the distance between B and E is 6, and between C and D is 15. The numbers in this graph... qwq)
 
-![图（1）](https://image.fanzhuo.xyz/file/AgACAgUAAyEGAASKws10AAMUaDrp4vK69On9IzL2uPaXoFU-B9sAAkTKMRupmthV8ILEvcQlrd4BAAMCAAN4AAM2BA.png "图（1）")
+![图（1）](https://origin.picgo.net/2025/09/13/graph-1edfb13fe0696d4ad.png "图（1）")
 
 As you can see, starting from A, the points that can be reached directly are B and E. We then consider the distance from A to all other points as infinity (0x3F3F3F3F3F3F3F3F), and the distance from each point to itself as 0.
 
